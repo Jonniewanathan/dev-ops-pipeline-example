@@ -3,11 +3,12 @@ jdk:
   - oraclejdk8
 before_install:
  - chmod +x gradlew
+addons:
+  sonarcloud:
+    organization: jonniewanathan-github
+    token:
+      secure: ad83a13726e8e5d00debca0d872d9d2489169548
 script:
   - gradle check
   - gradle build
-  - gradlew sonarqube \
-  -Dsonar.projectKey=Jonniewanathan_dev-ops-pipeline-example \
-  -Dsonar.organization=jonniewanathan-github \
-  -Dsonar.host.url=https://sonarcloud.io \
-  -Dsonar.login=ad83a13726e8e5d00debca0d872d9d2489169548
+  - gradle sonarqube
