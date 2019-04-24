@@ -16,5 +16,6 @@ script:
 deploy:
   provider: gae
   keyfile: client-secret.json
+  file: target/gs-testing-web.jar
   project: rock-sublime-238612
   skip_cleanup: true
