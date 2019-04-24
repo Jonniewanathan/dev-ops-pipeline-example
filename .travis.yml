@@ -17,4 +17,4 @@ script:
 deploy:
   provider: gae
   keyfile: client-secret.json
-  project: rock-sublime-238612
+  project: Dev-ops-Project
