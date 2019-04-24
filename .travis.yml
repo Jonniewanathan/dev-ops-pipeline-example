@@ -12,7 +12,7 @@ addons:
 script:
 - gradle check
 - gradle build
-- gradel fatjar
+- gradle fatjar
 - gradle sonarqube
 deploy:
   provider: gae
