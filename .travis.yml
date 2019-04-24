@@ -12,6 +12,7 @@ addons:
 script:
 - gradle check
 - gradle build
+- gradel jar
 - gradle sonarqube
 deploy:
   provider: gae
