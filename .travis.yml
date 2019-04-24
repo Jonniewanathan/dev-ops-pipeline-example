@@ -2,7 +2,6 @@ language: java
 jdk:
 - oraclejdk8
 before_install:
-- openssl aes-256-cbc -K $encrypted_65184c842012_key -iv $encrypted_65184c842012_iv -in client-secret.json.enc -out client-secret.json -d
 - chmod +x gradlew
 addons:
   sonarcloud:
@@ -12,11 +11,6 @@ addons:
 script:
 - gradle check
 - gradle build
-- gradle fatjar
 - gradle sonarqube
 deploy:
-  provider: gae
-  keyfile: client-secret.json
-  file: target/gs-testing-web.jar
-  project: rock-sublime-238612
-  skip_cleanup: true
+  provider: heroku
