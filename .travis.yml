@@ -17,3 +17,4 @@ deploy:
   provider: gae
   keyfile: client-secret.json
   project: rock-sublime-238612
+  skip_cleanup: true
