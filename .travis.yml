@@ -13,4 +13,7 @@ script:
 - gradle build
 - gradle sonarqube
 deploy:
-  provider: heroku
+  provider: gae
+  keyfile: client-secret.json
+  file: /build/lib/gs-testing-web-0.1.0.jar
+  project: rock-sublime-238612
