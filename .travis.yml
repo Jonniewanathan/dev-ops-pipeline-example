@@ -13,6 +13,7 @@ script:
 - gradle check
 - gradle build
 - gradle sonarqube
+- mv app.yaml ./build/libs/app.yaml
 
 deploy:
   provider: gae
