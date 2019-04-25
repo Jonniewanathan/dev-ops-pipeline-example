@@ -14,6 +14,7 @@ script:
 - gradle build
 - gradle sonarqube
 - mv app.yaml ./build/libs/app.yaml
+- mv client-secret.json ./build/libs/client-secret.json
 - cd ./build/libs/
 
 deploy:
