@@ -12,6 +12,7 @@ script:
 - gradle check
 - gradle build
 - gradle sonarqube
+
 deploy:
   provider: gae
   keyfile: client-secret.json
