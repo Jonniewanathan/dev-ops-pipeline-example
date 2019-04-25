@@ -19,3 +19,4 @@ deploy:
   keyfile: client-secret.json
   file: /build/lib/gs-testing-web-0.1.0.jar
   project: rock-sublime-238612
+  deploy.skip_cleanup: true
