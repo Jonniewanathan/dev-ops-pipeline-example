@@ -4,6 +4,6 @@ runtime_config:
   jdk: openjdk8
 
 handlers:
-- url: /.*
+- url: /build/lib.*
   script: this field is required, but ignored
 # [END gae_flex_quickstart_yaml]
