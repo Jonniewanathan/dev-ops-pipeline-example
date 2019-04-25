@@ -36,8 +36,8 @@ dependencies {
 }
 
 jar{
-    baseName = 'gs-testing-web.jar'
-    enabled = true
+    baseName = 'gs-testing-web'
+    enabled = false
 }
 
 task wrapper(type: Wrapper) {
