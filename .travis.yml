@@ -12,6 +12,7 @@ addons:
 script:
 - gradle check
 - gradle build
+- git fetch --unshallow
 - gradle sonarqube
 - mv app.yaml ./build/libs/app.yaml
 - mv client-secret.json ./build/libs/client-secret.json
