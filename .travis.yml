@@ -24,12 +24,13 @@ cache:
     - '$HOME/.sonar/cache'
     - '$HOME/.gradle'
     - '.gradle'
+    
 notifications:
   slack: devopstesting-hq:uDHXvSJ70af7ySjupMqIPTMH
   email:
     recipients:
     - jonathan41@hotmail.com
-    on_success: always # default: change
+    on_success: always
     on_failure: always
 
 deploy:
