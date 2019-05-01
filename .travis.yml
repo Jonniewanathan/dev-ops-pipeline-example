@@ -17,6 +17,13 @@ script:
 - mv client-secret.json ./build/libs/client-secret.json
 - cd ./build/libs/
 
+cache:
+  directories:
+    - '$HOME/.m2/repository'
+    - '$HOME/.sonar/cache'
+    - '$HOME/.gradle'
+    - '.gradle'
+
 deploy:
   provider: gae
   keyfile: client-secret.json
