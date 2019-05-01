@@ -6,9 +6,9 @@ before_install:
 - chmod +x gradlew
 addons:
   sonarcloud:
-    organization: jonniewanathan-github
+    organization: "jonniewanathan-github"
     token:
-      secure: ad83a13726e8e5d00debca0d872d9d2489169548
+      secure: "ad83a13726e8e5d00debca0d872d9d2489169548"
 script:
 - gradle check
 - gradle build
